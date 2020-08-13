@@ -18,7 +18,7 @@ class EmailAddressParser
       address.split(", ")
       @@emails << address
     end
-    @@emails.uniq
+    .flatten.uniq
   end
   
   
