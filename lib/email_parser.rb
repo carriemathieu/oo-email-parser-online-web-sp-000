@@ -15,7 +15,7 @@ class EmailAddressParser
     # add to emails array 
     # list uniq emails
     @csv.split(/[,]/).each do |address|
-      address.split
+      address.split(" ")
       @@emails << address
     end
     @@emails.uniq
