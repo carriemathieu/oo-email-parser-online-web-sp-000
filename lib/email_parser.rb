@@ -16,7 +16,6 @@ class EmailAddressParser
     # list uniq emails
     @csv.split.collect do |address|
       address.split(", ")
-      @@emails << address
     end
     .flatten.uniq
   end
